@@ -19,10 +19,6 @@ body{
     width: 50px;
 }
 
-.line{
-    color: lightgray;
-}
-
 .nav{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -34,8 +30,34 @@ body{
     padding: 0px;
     margin: 10px 0px 10px 0px;
     border-right: 1px solid  lightgray;
+    font-size: 20px;
 }
 
 .cs{
     border: none;
+}
+
+.main{
+    border-bottom: 2px solid black;
+}
+
+.list{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 0px;
+}
+
+hr{
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+li{
+    margin: 5px 10px 0px 10px;
+}
+
+.link{
+    color: black;
+    text-decoration: none;    
 }
