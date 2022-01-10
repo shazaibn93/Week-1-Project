@@ -61,3 +61,66 @@ li{
     color: black;
     text-decoration: none;    
 }
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr, 3fr;
+    grid-template-rows: 1fr, 3fr;
+    padding:30px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.thumbnail {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: #923530;
+    color: white;
+    height: 350px;
+    padding: 10px;
+}
+h5 {
+    border-bottom: 2px white solid;
+}
+.caption div {
+    display: grid;
+    height: 100px;
+    width: 175px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+.contact_us_text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.location_section {
+    display: grid;
+    padding: 15px;
+    grid-template-columns: 3fr 3fr 3fr 1fr 3fr;
+    grid-template-rows: 1fr 11fr;
+    grid-template-areas:
+        "h1 h1 h1 . h4"
+        "c1 c2 c3 . c4";
+}
+.header_one {
+    grid-area: h1;
+    border-bottom: 2px lightgray solid;
+}
+.states_one {
+    grid-area: c1;    
+}
+.states_two {
+    grid-area: c2;  
+}
+.states_three {
+    grid-area: c3;
+}
+.header_two {
+    grid-area: h4;
+    border-bottom: 2px lightgray solid;
+}
+.states_four {
+    grid-area: c4;
+}
